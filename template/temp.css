@@ -1,0 +1,51 @@
+
+ .group {
+    display: grid;
+grid-template-rows: 1fr;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+grid-gap: .5vw;
+
+ }
+
+body {
+    color: rgb(67, 95, 102);
+
+}
+
+h1 {
+    background-color: rgb(37, 56, 55);
+    color: #CCCCCC;
+
+
+}
+ a {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  display: inline-block; 
+  transform-origin: center; 
+  background-size: contain;
+  background-repeat: initial;
+}
+
+a:hover {
+  transform: scale(1.5); 
+  background-color: #CCCCCC; 
+}
+h2 {
+    background-color: rgba(58, 61, 61, 0.548);
+    color: #EEEEEE;
+    border-radius: 10px;
+    padding: 5px;
+}
+p {
+    color: #EEEEEE;
+    background-color: rgba(82, 82, 82, 0.555);
+    border-radius: 10px;
+    padding: 5px;
+}
