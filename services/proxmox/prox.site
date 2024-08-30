@@ -1,4 +1,4 @@
 proxmox
-http://192.168.1.1:8006
+https://192.168.1.20:8006/#v1:0:18:4:::::::
 main vm server
 background-image: url("https://www.hostelworld.com/blog/wp-content/uploads/2018/12/denali-1313x875.jpg")

@@ -8,14 +8,15 @@ grid-gap: .5vw;
  }
 
 body {
-    color: rgb(67, 95, 102);
+    background-color: rgb(67, 95, 102);
 
 }
 
 h1 {
-    background-color: rgb(37, 56, 55);
+    background-color: rgb(58, 69, 77);
     color: #CCCCCC;
-
+    padding: 10px;
+    border-radius: 10px; 
 
 }
  a {
