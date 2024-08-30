@@ -1,4 +1,4 @@
 gitea
 http://192.168.1.222:3002
 Github like git server
-background-color: darkgreen;
+background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gitea_Logo.svg/512px-Gitea_Logo.svg.png")
