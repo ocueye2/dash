@@ -3,23 +3,30 @@
     display: grid;
 grid-template-rows: 1fr;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-grid-gap: .5vw;
+grid-gap: .1vw;
+background-color: #35465a9f;
+backdrop-filter: blur(10px);
+padding: 20px;
+margin: 20px;
+border-radius: 20px;
 
  }
 
 body {
-    background-color: rgb(67, 95, 102);
-
+    background-image: url('https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg');
+    background-size:cover
 }
 
 h1 {
-    background-color: rgb(58, 69, 77);
+    background-color: rgba(58, 69, 77, 0.726);
     color: #CCCCCC;
     padding: 10px;
     border-radius: 10px; 
+    backdrop-filter: blur(10px);
 
 }
  a {
+    size: 200px;
   font: bold 11px Arial;
   text-decoration: none;
   background-color: #EEEEEE;

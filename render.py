@@ -9,7 +9,7 @@ def prepare(config):
     out = f""" 
         <div class="item">
             <a href="{config[1]}" style='{config[3]}'>
-            <h2>{config[0]}</h2>
+            <h3>{config[0]}</h3>
             <p>{config[2]}</p>
             </a>
         </div>
@@ -22,7 +22,7 @@ html = ""
 for i in groups:
     items = os.listdir(f"{os.path.dirname(sys.argv[0])}/services/{i}")
     html = html + f"""
-    <h1>{i}</h1>
+    <h2>{i}</h2>
     <div class="group">
     """
 
@@ -34,6 +34,7 @@ for i in groups:
 
 css = open(f"{os.path.dirname(sys.argv[0])}/template/temp.css")
 html = f"""
+<h1> My ok ish dashboard </h1>
 <style>
 {css.read()}
 </style>
@@ -42,4 +43,12 @@ html = f"""
 f = open(f"{os.path.dirname(sys.argv[0])}/render/render.html","w")
 f.write(html)
 
-exec(load(f"{os.path.dirname(sys.argv[0])}/dash.py"))
+port = 1111
+try:
+    exec(open(f"{os.path.dirname(sys.argv[0])}/run.py").read())
+except OSError as error:
+    if error.errno == 98:
+        print(f"recompiled, another service or instance of this server is running on port {port}")
+        print("if this server is running, it will have the current config")
+    else:
+        print(f"unexpected error: '{error}'")
