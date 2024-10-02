@@ -1,3 +1,5 @@
+port = 8080
+
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import sys
 import os
@@ -26,4 +28,5 @@ def run(server_class=HTTPServer, handler_class=SimpleHTTPRequestHandler, port=11
     httpd.serve_forever()
 
 if __name__ == "__main__":
+
     run(port=port)
